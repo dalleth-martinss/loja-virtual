@@ -1,0 +1,91 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+# Compilados Java
+*.class
+
+# Diretorios de build do Maven
+target/
+
+# Configuracoes e cache do Maven
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Logs
+*.log
+logs/
+spring.log
+
+# Arquivos de configuracao local e sensiveis
+*.env
+*.properties
+*.yml
+application.properties
+application.yml
+
+# Diretorios do IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Diretorios e arquivos temporarios
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# Banco de dados e backups
+*.sql
+*.dump
+
+# Cache do Spring Boot DevTools
+.spring-boot-devtools.properties
+
+# Configuracao de dependencias externas
+dependency-reduced-pom.xml
+
+# Arquivos de build/geracao manual
+build/
+
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
