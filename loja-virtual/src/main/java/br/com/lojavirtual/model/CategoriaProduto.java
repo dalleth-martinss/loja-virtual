@@ -1,6 +1,8 @@
 package br.com.lojavirtual.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -9,6 +11,8 @@ import java.util.Objects;
 @Entity
 @Table(name = "categoria_produto")
 @SequenceGenerator(name = "seq_categoria_produto", sequenceName = "seq_categoria_produto", allocationSize = 1, initialValue = 1)
+@Getter
+@Setter
 public class CategoriaProduto implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
