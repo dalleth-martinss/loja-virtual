@@ -19,6 +19,8 @@ import java.io.Serializable;
      @Id
      @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_marca_produto")
      private Long id;
+
+     @Column(nullable = false)
      private  String nomeDesc;
 
     }
