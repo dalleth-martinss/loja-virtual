@@ -8,7 +8,6 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.util.Objects;
 
-
 @Entity
 @Table(name = "nota_fiscal_venda")
 @SequenceGenerator(name = "seq_nota_fiscal_venda", sequenceName = "seq_nota_fiscal_venda", allocationSize = 1, initialValue = 1)
@@ -32,6 +31,11 @@ public class NotaFiscalVenda implements Serializable {
 
     @Column(columnDefinition = "text") // notação para o campo ficar sem limite de texto
     private String pdf;
+
+    @OneToOne
+    @JoinColumn(name = "venda_prod_loja_virt_id", nullable = false,
+    foreignKey = @ForeignKey(value = ConstraintMode.CONSTRAINT, name = "venda_prod_loja_virt_fk"))
+    private VendaProdutoLojaVirtual vendaProdutoLojaVirtual;
 
     @Override
     public boolean equals(Object o) {

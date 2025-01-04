@@ -26,6 +26,11 @@ import java.util.Objects;
    private String estado;
    private String status;
 
+    @ManyToOne
+    @JoinColumn(name = "venda_prod_loja_virt_id", nullable = false,
+    foreignKey = @ForeignKey(value = ConstraintMode.CONSTRAINT, name = "venda_prod_loja_virt_fk"))
+    private VendaProdutoLojaVirtual vendaProdutoLojaVirtual;
+
   @Override
   public boolean equals(Object o) {
     if (o == null || getClass() != o.getClass()) return false;
