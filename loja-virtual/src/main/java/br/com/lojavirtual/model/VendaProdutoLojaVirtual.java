@@ -16,7 +16,7 @@ import java.util.Objects;
 @SequenceGenerator(name = "seq_venda_prod_loja_virt", sequenceName = "seq_venda_prod_loja_virt", allocationSize = 1, initialValue = 1)
 @Getter
 @Setter
-public class VendaProdutoLojaVirtual implements Serializable {
+public class VendaProdutoLojaVirtual implements Serializable { // classe da venda do produto.
 
     @Serial
     private static final long serialVersionUID = 1L;
