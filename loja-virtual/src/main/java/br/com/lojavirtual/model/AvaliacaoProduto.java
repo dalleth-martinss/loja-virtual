@@ -23,6 +23,7 @@ import java.util.Objects;
    private Long id;
 
     private Integer nota;
+    private String descricao;
 
     @ManyToOne
     @JoinColumn(name = "produto_id", nullable = false,
