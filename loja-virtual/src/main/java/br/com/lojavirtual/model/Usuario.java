@@ -30,6 +30,7 @@ public class Usuario implements UserDetails {
         @Temporal(TemporalType.DATE)
         private Date dateAtualSenha;
 
+        //tabela do joinTable - usuario acesso unico - nas colunas user-id e acesso-id. O acesso é atrelado ao usuario criando fk de acesso.
         @OneToMany(fetch = FetchType.LAZY)
         @JoinTable(name = "usuario_acesso", uniqueConstraints = @UniqueConstraint(columnNames = {"usuario_id", "acesso_id"},
                     name = "unique_acesso_user"),
