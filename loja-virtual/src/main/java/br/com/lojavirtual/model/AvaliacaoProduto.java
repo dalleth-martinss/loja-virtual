@@ -22,12 +22,15 @@ import java.util.Objects;
    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_avaliacao_produto")
    private Long id;
 
+   @Column(nullable = false)
     private Integer nota;
+
+   @Column(nullable = false)
     private String descricao;
 
     @ManyToOne
     @JoinColumn(name = "produto_id", nullable = false,
-    foreignKey = @ForeignKey(value = ConstraintMode.CONSTRAINT, name = "pessoa_fk"))
+    foreignKey = @ForeignKey(value = ConstraintMode.CONSTRAINT, name = "produto_fk"))
     private Produto produto;
 
     @ManyToOne
