@@ -25,12 +25,13 @@ import java.util.Objects;
    private Long id;
 
    @Column(nullable = false)
-   private String CodigoDescricao ;
+   private String CodigoDescricao;
 
    private BigDecimal valorRealDesconto;
 
    private BigDecimal valorPorcentDesconto;
 
+   @Column(nullable = false)
    @Temporal(TemporalType.DATE)
    private Date dataValidadeCupom;
 
