@@ -25,16 +25,21 @@ import java.util.Objects;
    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_conta_receber")
    private Long id;
 
+   @Column(nullable = false)
    private String descricao ;
 
+    @Column(nullable = false)
    @Enumerated(EnumType.STRING)
    private StatusContaReceber status;
 
+   @Column(nullable = false)
    @Temporal(TemporalType.DATE)
    private Date dataVencimento;
 
    @Temporal(TemporalType.DATE)
    private String dataPagamento ;
+
+    @Column(nullable = false)
    private BigDecimal valorTotal;
    private BigDecimal valorDesconto;
 
