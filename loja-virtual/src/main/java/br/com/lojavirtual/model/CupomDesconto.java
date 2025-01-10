@@ -24,8 +24,11 @@ import java.util.Objects;
    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_cupom_desconto")
    private Long id;
 
+   @Column(nullable = false)
    private String CodigoDescricao ;
+
    private BigDecimal valorRealDesconto;
+
    private BigDecimal valorPorcentDesconto;
 
    @Temporal(TemporalType.DATE)
